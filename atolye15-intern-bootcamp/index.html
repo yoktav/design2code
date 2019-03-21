@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A15 Flight</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!--NAVBAR START-->
+    <nav>
+        <div class="container">
+            <div class="toggle">
+                <a href="#">
+                    <!--  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="#fff" />
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                    -->
+                    <img src="img/bar.svg" alt="menu">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="">
+                        <img class="logo" src="img/icons/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#"><img class="search" src="img/icons/magnify.svg" alt="Arama yap"></a>
+                    <ul>
+                        <li><a href="#">Anasayafa</a></li>
+                        <li><a href="#">Kampanyalar</a></li>
+                        <li><a href="#">Bilet İşlemleri</a></li>
+                        <li><a href="#">Yardım</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--NAVBAR END-->
+
+    <!--HEADER START-->
+    <div class="header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="choose-flight d-flex align-items-center">
+                        <div class="circle">
+                            <div class="airplane">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15.998v-2l-8-5v-5.5a1.5 1.5 0 1 0-3 0v5.5l-8 5v2l8-2.5v5.5l-2 1.5v1.5l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z" fill="#1a3163" />
+                                </svg>
+                            </div>
+                            <div class="circle-text">Uçuş Seçimi</div>
+                        </div>
+                        <div class="dot-sm-path"></div>
+                        <div class="dot-sm-path"></div>
+                        <div class="buy-path-img">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 10c4.418 0 8 1.79 8 4v2H4v-2c0-2.21 3.582-4 8-4z" fill="#97a6b8" />
+                            </svg>
+                        </div>
+                        <div class="dot-sm-path"></div>
+                        <div class="dot-sm-path"></div>
+                        <div class="buy-path-img">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.351 5.64a2.01 2.01 0 0 1-.492-2.789A2.012 2.012 0 0 1 7.65 2.36 2.016 2.016 0 0 1 8.14 5.15a2.012 2.012 0 0 1-2.789.489zm10.65 13.359h-7.07a2.99 2.99 0 0 1-2.96-2.539L4 7.003H2.003l1.986 9.755A5.014 5.014 0 0 0 8.94 21h7.061M16.23 15h-4.882l-1.025-4.101c1.577.894 3.276 1.542 5.146 1.22V9.99c-1.631.307-3.438-.269-4.688-1.25l-1.64-1.269a2.177 2.177 0 0 0-.762-.381 2.193 2.193 0 0 0-.991-.059h-.02A2.261 2.261 0 0 0 5.534 9.64L6.88 15.56a3.001 3.001 0 0 0 2.949 2.437h6.851L20.498 21l1.505-1.499" fill="#97a6b8" />
+                            </svg>
+                        </div>
+                        <div class="dot-sm-path"></div>
+                        <div class="dot-sm-path"></div>
+                        <div class="buy-path-img">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7.998H4v-2h16m0 12H4v-6h16m0-8H4a1.99 1.99 0 0 0-1.99 2l-.01 12c0 1.106.894 2 2 2h16c1.104 0 2-.894 2-2v-12c0-1.106-.896-2-2-2z" fill="#97a6b8" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col mb--15">
+                    <p class="fl-right">Toplam Tutar</p>
+                </div>
+            </div>
+
+            <div class="row destination">
+                <div class="col-8 d-flex align-items-center">
+                    <p class=" d-flex mr-14">Ankara (ESB)</p>
+                    <div class="dot-md d-flex"></div>
+                    <div class="dot-md d-flex"></div>
+                    <svg class="ml-6 rotate-90" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15.998v-2l-8-5v-5.5a1.5 1.5 0 1 0-3 0v5.5l-8 5v2l8-2.5v5.5l-2 1.5v1.5l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z" fill="#fff" />
+                    </svg>
+                    <div class="dot-md d-flex"></div>
+                    <div class="dot-md d-flex"></div>
+                    <p class="d-flex ml-14">İzmir (ADB)</p>
+                </div>
+                <div class="col-4">
+                    <p class="fl-right">269.9 TL</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="dest-info d-flex align-items-center">
+                        <li class="d-flex">27 Eyl, Pzr - 08 Eki, Pts</li>
+                        <div class="dot-md-person d-flex"></div>
+                        <li class="d-flex">1 Yetişkin</li>
+                        <div class="dot-md-person d-flex"></div>
+                        <li class="d-flex">Gidiş - Dönüş</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <button type="button" class="btn-yellow fl-right align-items-center d-flex" style="margin-top: -30px;"><span class="btn-text">Devam et</span>
+                            <svg class="justify-content-center" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 17l5-5-5-5v10z" fill="#fff" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HEADER END-->
+
+    <!--LINE START-->
+    <div class="line">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 align-items-center d-flex line-border">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <mask id="b">
+                                <use fill="#FFF" xlink:href="#a" />
+                            </mask>
+                            <path id="a" d="M0 0h24v24H0z" />
+                        </defs>
+                        <path mask="url(#b)" d="M2.5 19h19v2h-19v-2zm19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10l-6.9-6.43-1.93.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33 1.6-.43 5.31-1.42 4.35-1.16L21 11.49c.81-.23 1.28-1.05 1.07-1.85z" fill="#97a6b8" />
+                    </svg>
+                    <span class="line-text">Nereden?</span>
+                </div>
+                <div class="col-2 align-items-center d-flex line-border">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <mask id="a">
+                                <path fill="#FFF" d="M0 0h24v24H0z" />
+                            </mask>
+                        </defs>
+                        <path mask="url(#a)" d="M2.5 19h19v2h-19v-2zm7.18-5.73l4.35 1.16 5.31 1.42c.8.21 1.62-.26 1.84-1.06.21-.8-.26-1.62-1.06-1.84l-5.31-1.42-2.76-9.02L10.12 2v8.28L5.15 8.95l-.93-2.32-1.45-.39v5.17l1.6.43 5.31 1.43z" fill="#97a6b8" />
+                    </svg>
+                    <span class="line-text">Nereye?</span>
+                </div>
+                <div class="col-2 align-items-center d-flex line-border">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 14H7v2h7m5 3H5V8h14m0-5h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 7H7v2h10v-2z" fill="#97a6b8" /></svg>
+                    <span class="line-text">Gidiş / Dönüş tarihi seç</span>
+                </div>
+                <div class="col-2 align-items-center d-flex line-border">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 10c4.418 0 8 1.79 8 4v2H4v-2c0-2.21 3.582-4 8-4z" fill="#97a6b8" /></svg>
+                    <span class="line-text">Yolcu seç</span>
+                </div>
+                <div class="col-4 line-border">
+                    <a href="#">
+                        <button type="button" class="btn-gray fl-right align-items-center d-flex"><span class="btn-search-text">Yeniden Ara</span>
+                            <svg class="justify-content-center" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3a6.5 6.5 0 0 1 4.936 10.73l.271.27h.793l5 5-1.5 1.5-5-5v-.793l-.27-.27A6.5 6.5 0 1 1 9.5 3zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z" fill="#fff" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--LINE END-->
+
+    <!--CARDS START-->
+    <div class="container">
+
+        <div class="row mt-48">
+            <!-- DEPARTURE START -->
+            <div class="col-lg-6">
+
+                <div class="row">
+                    <img src="img/icons/airplane.svg" alt="airplane" class="rotate-90">
+                    <p class="d-flex card-header-text">Gidiş Uçuşları</p>
+                </div>
+
+                <div class="row info-card">
+                    <div class="col">
+                        <a href="#">
+                            <div class="box-left">
+                                <img class="mt-30 ml-5" src="img/icons/chevron%20left.svg" alt="Sol ok">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="row justify-content-center">
+                                <p class="info-card-top">26 Eyl, Cts</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="info-card-down">149,99 TL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3 border-bottom">
+                        <a href="#">
+                            <div class="row justify-content-center">
+                                <p class="info-card-top">27 Eyl, Cts</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="info-card-down">249,99 TL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="row justify-content-center">
+                                <p class="info-card-top">28 Eyl, Cts</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="info-card-down">169,99 TL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="box-right">
+                                <img class="mt-30 rotate-180" src="img/icons/chevron%20left.svg" alt="Sol ok">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FLIGHT 1 START -->
+                <a href="#">
+                    <div class="row">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/pegasus-logo.jpg" alt="Pegasus Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">149,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">07:05</p>
+                                </div>
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-90">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-left">08:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 1 END -->
+                <!-- FLIGHT 2 START -->
+                <a href="#">
+                    <div class="row">
+                        <div class="box bx-shadow">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img-2" src="img/thy-logo.png" alt="Türk Hava Yolları Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">269,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-choosen">Bilet Seçildi</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">07:05</p>
+                                </div>
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-90">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-left">08:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 2 END -->
+                <!-- FLIGHT 3 START -->
+                <a href="#">
+                    <div class="row">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/aj-logo.jpg" alt="Anadolu Jet Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">329,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">08:05</p>
+                                </div>
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-90">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-left">09:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 3 END -->
+                <!-- FLIGHT 4 START -->
+                <a href="#">
+                    <div class="row">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/pegasus-logo.jpg" alt="Pegasus Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">159,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">10:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-90">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">11:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 4 END -->
+                <!-- FLIGHT 5 START -->
+                <a href="#">
+                    <div class="row">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/pegasus-logo.jpg" alt="Pegasus Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">289,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">12:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-90">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">13:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 5 END -->
+                <!-- FLIGHT 6 START -->
+                <a href="#">
+                    <div class="row">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img-2" src="img/thy-logo.png" alt="Türk Hava Yolları Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">129,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">13:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-90">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">14:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 6 END -->
+            </div>
+            <!-- DEPARTURE END -->
+            <!-- ARRIVAL START -->
+            <div class="col-lg-6">
+
+                <div class="row" style="margin-left: 5px;">
+                    <img src="img/icons/airplane.svg" alt="airplane" class="rotate-270">
+                    <p class="d-flex card-header-text">Dönüş Uçuşları</p>
+                </div>
+
+                <div class="row info-card" style="margin-left: 5px;">
+                    <div class="col">
+                        <a href="#">
+                            <div class="box-left">
+                                <img class="mt-30 ml-5" src="img/icons/chevron%20left.svg" alt="Sol ok">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="row justify-content-center">
+                                <p class="info-card-top">07 Eki, Pzr</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="info-card-down">149,99 TL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3 border-bottom">
+                        <a href="#">
+                            <div class="row justify-content-center">
+                                <p class="info-card-top">08 Eki, Pts</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="info-card-down">249,99 TL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="row justify-content-center">
+                                <p class="info-card-top">09 Eki, Sal</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="info-card-down">169,99 TL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="box-right">
+                                <img class="mt-30 rotate-180" src="img/icons/chevron%20left.svg" alt="Sol ok">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FLIGHT 1 START -->
+                <a href="#">
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/pegasus-logo.jpg" alt="Pegasus Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">149,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">07:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-270">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">08:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 1 END -->
+                <!-- FLIGHT 2 START -->
+                <a href="#">
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img-2" src="img/thy-logo.png" alt="Türk Hava Yolları Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">269,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seçin</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">07:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-270">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">08:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 2 END -->
+                <!-- FLIGHT 3 START -->
+                <a href="#">
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/aj-logo.jpg" alt="Anadolu Jet Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">329,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">08:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-270">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">09:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 3 END -->
+                <!-- FLIGHT 4 START -->
+                <a href="#">
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/pegasus-logo.jpg" alt="Pegasus Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">159,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">10:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-270">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">11:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 4 END -->
+                <!-- FLIGHT 5 START -->
+                <a href="#">
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img" src="img/pegasus-logo.jpg" alt="Pegasus Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">289,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">12:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-270">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">13:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 5 END -->
+                <!-- FLIGHT 6 START -->
+                <a href="#">
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="box">
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="card-img-2" src="img/thy-logo.png" alt="Türk Hava Yolları Logo">
+                                </div>
+                                <div class="col-5">
+                                    <p class="card-text fl-right">129,99 TL</p>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn-ticket">Bileti Seç</button>
+                                </div>
+                            </div>
+
+                            <div class="hr-line">
+                                <div class="half-circle-left"></div>
+                                <hr>
+                                <div class="half-circle-right"></div>
+                            </div>
+
+                            <div class="row disp-inline">
+                                <div class="col-2">
+                                    <p class="dest-where" style="font-size: 17px;">HTY</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <p style="font-size: 17px;">ADB</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Süre</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Transfer</p>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="dest-where dest-time-left">13:05</p>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <div class="flight align-items-center">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                        <img src="img/icons/airplane.svg" alt="Airplane" class="ml-6 rotate-270">
+                                        <div class="dot-sm"></div>
+                                        <div class="dot-sm"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-2">
+                                    <p class="dest-time-left">14:25</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">1s, 20dk</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="dest-time-right">Aktarmasız</p>
+                                </div>
+                                <div class="col-2">
+                                    <img class="m-t18-l27" src="img/icons/chevron%20right.svg" alt="Detaylar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- FLIGHT 6 END -->
+            </div>
+            <!-- ARRIVAL END -->
+        </div>
+    </div>
+    <!--CARDS END-->
+
+    <!--FOOTER START-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+
+                    <div class="row">
+                        <a href="#" class="footer-header-color">
+                            <img src="img/icons/footer-logo.svg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="row footer-element footer-element-color">Copyright &#9400; <a href="#" class="footer-element-color">Atolye15</a>All rights reserved
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="row footer-header"><a href="#" class="footer-header-color">PRODUCTS</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Features</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Personal License</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Business License</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Pricing Options</a></div>
+                </div>
+                <div class="col-3">
+                    <div class="row footer-header"><a href="#" class="footer-header-color">ABOUT</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">About</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Careers</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Blog</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Contact</a></div>
+                </div>
+                <div class="col-3">
+                    <div class="row footer-header"><a href="#" class="footer-header-color">SUPPORT</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Support Center</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">Help Desk</a></div>
+                    <div class="row footer-element"><a href="#" class="footer-element-color">FAQ</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+</body>
+
+</html>
