@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500')
+
+/*$primary-color-dark: #D32F2F
+/*$primary-color:      #F44336
+$bg-color:           #fafafa
+$primary-color:      #212121
+$secondary-color:    #FC4A1A
+$tertiary-color:     #F7B733
+$fourth-color:       #DFDCE3
+$fifth-color:        #4ABDAC
+$white-color:        #FFFFFF
+$font-size:          17px
+$br-radius:          2px
+$transition:         .2s
+
+@mixin box-shadow-1
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+
+@mixin box-hover
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+
+body
+    font-family: 'Roboto', sans-serif
+    background-color: $bg-color
+    font-size: $font-size
+    color: $primary-color
+
+a
+    text-decoration: none
+    color: $primary-color
+    
+.link-hover
+    transition: $transition
+    &:hover
+        color: $secondary-color
+        border-bottom: 2px solid $tertiary-color
+
+.header-top
+    background-color: $secondary-color
+    color: $white-color
+    
+.header-top__text
+    line-height: 40px
+    margin: auto
+    
+.nav
+    @include box-shadow-1
+    background-color: $white-color
+
+.nav__header
+    display: inline-block
+    line-height: 20px
+
+.nav__list
+    float: right
+
+.nav__list-item
+    @extend .nav__header
+    padding-left: 20px
+
+.sidebar
+    @include box-shadow-1
+    background-color: $white-color
+    border-radius: $br-radius
+    height: 560px
+    
+.sidebar__header
+    font-weight: normal
+    font-size: $font-size
+    color: $secondary-color
+    
+.sidebar__header--underline
+    border-bottom: 2px solid $fourth-color
+    display: inline-block
+    
+.sidebar__list
+    list-style: none
+    display: contents
+    
+.sidebar__list-item
+    display: block
+    margin: 0px 0px
+    padding: 15px 5px
+    transition: $transition
+    &:hover
+        background-color: $fourth-color
+        border-radius: $br-radius
+        color: $secondary-color
+        @include box-hover
+    i
+        float: right
+        
+.card
+    @extend .sidebar
+    height: auto
+    transition: $transition
+    margin-bottom: 10px
+    &:hover
+        @include box-hover
+    
+.card__image
+    object-fit: cover
+    height: 100%
+    width: 100%
+    
+.card__header
+    @extend .sidebar__header
+    color: $primary-color
+    text-transform: uppercase
+    letter-spacing: 1px
+    opacity: 0.9
+    position: relative
+    top: 10px
+
+.card__info
+    opacity: 0.6
+    
+@media (max-width: 576px)
+    .card__header
+        font-size: 14px
+    .card__info
+        font-size: 12px
+    
+    
