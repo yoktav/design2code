@@ -1,0 +1,101 @@
+.card
+    background-color: $white-color
+    margin-bottom: 8px
+    border-radius: 10px
+    transition: 0.2s
+    &:hover
+        box-shadow: 0 16px 32px 0 rgba(31, 56, 110, 0.18)
+    
+.card-top__flex, .card-bottom__flex
+    display: flex
+    
+.card-top__flex-item:nth-of-type(1)
+    flex-grow: 1
+    margin-left: 23px
+    margin-top: 32px
+    
+.card-top__flex-item:nth-of-type(2)
+    flex-grow: 10
+    margin-top: 32px
+    
+.card-top__flex-item:nth-of-type(3)
+    flex-grow: 1
+    margin-right: 23px
+    margin-top: 32px
+    
+.card-top__flex-item-price
+    color: $primary-color
+    font-size: 24px
+    position: relative
+    top: 16%
+    
+.card__image
+    margin-top: 10px
+
+.card-bottom__flex    
+    padding: 0 32px 23px 32px
+        
+.card-bottom__flex-item:nth-of-type(1)
+    flex-grow: 2
+    
+.card-bottom__flex-item:nth-of-type(2)
+    flex-grow: 2
+
+.card-bottom__flex-item:nth-of-type(3)
+    flex-grow: 6
+    
+.card-bottom__flex-item:nth-of-type(4)
+    flex-grow: 5
+
+.card-bottom__flex-item:nth-of-type(5)
+    flex-grow: 1
+
+.card-bottom__flex-item:nth-of-type(6)
+    flex-grow: 1
+    
+.card__sub-header
+    line-height: 20px
+    font-size: 14px
+    color: $primary-color
+    opacity: 0.5
+    
+.card__divider
+    margin: 24px auto
+    padding: 0
+    width: 95%    
+    border: none
+    border-top: 2px dashed $pale-grey
+    &:before
+        content: ""
+        display: inline-block
+        width: 15px
+        height: 15px
+        margin-right: 5px
+        background-color: $bg-color
+        border-radius: 50%
+        position: absolute
+        left: 0
+        margin-top: -9px
+        margin-left: 7px
+    &:after
+        content: ""
+        display: inline-block
+        width: 15px
+        height: 15px
+        background-color: $bg-color
+        border-radius: 50%
+        position: absolute
+        right: 0
+        margin-top: -9px
+        margin-right: 7px
+
+.card__meta
+    line-height: 36px
+    font-size: 16px
+    color: $primary-color
+        
+.card__meta--big
+    font-size: 24px
+
+.card__meta--warning
+    color: $reddish-pink

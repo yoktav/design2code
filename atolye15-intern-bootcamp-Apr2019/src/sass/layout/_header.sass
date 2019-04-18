@@ -1,0 +1,89 @@
+.header
+    background-image: linear-gradient(102deg, #264380, #1a3163)
+
+.ticket-nav
+    padding-left: 0
+    margin-bottom: 48px
+    
+.ticket-nav__item    
+    display: inline-block
+    list-style: none
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;  
+    border: solid 1px $light-blue-grey
+    border-radius: 50%
+    
+.ticket-nav .is-active
+    opacity: 1
+    margin-right: 135px
+    
+.ticket-nav .is-active .ticket-nav__item-icon
+    fill: $primary-color
+    
+.ticket-nav__item-text
+    width: 170px;
+    height: 41px;
+    color: $primary-color
+    mix-blend-mode: luminosity
+    background-color: rgba(255, 255, 255, 0.8)
+    text-align: center
+    position: absolute
+    z-index: 0
+    top: 14px
+    line-height: 40px
+    border-radius: 24px
+    
+.circle
+    background-color: $white-color
+    border-radius: 50%
+    width: 40px;
+    height: 40px;
+    
+.flght__info-item
+    font-size: 48px
+    color: $white-color
+    
+.flght-list
+    padding-left: 0
+    margin-top: 16px
+    
+.flght-list__item
+    display: inline-block
+    list-style: none
+    font-size: 14px
+    color: $white-color
+    margin-right: 16px
+    
+.flght__buy-text
+    position: absolute
+    top: -24px
+    right: 16px
+    float: right
+    font-size: 16px
+    opacity: 0.5
+    color: $white-color
+    
+.flght__buy-price
+    font-size: 48px
+    color: $white-color
+    margin-bottom: 16px
+    
+.flightChoose
+    background-color: $white-color
+    margin-top: 80px
+    
+.flightChoose__item    
+    border-left: 1px solid #e6edf5
+    
+.flightChoose__item-input
+    display: inline-block
+    float: right
+    width: 80%
+    height: 100%
+    border: none
+    color: $primary-color
+    opacity: 0.5
+    
+.flightChoose select:focus, .flightChoose input:focus
+    outline: none       

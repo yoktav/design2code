@@ -1,0 +1,374 @@
+{% set cardsDeparture = {
+    card1: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "149,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "07:05",
+        arrival:        "08:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card2: {
+        imgSrc:         "./assets/img/turk-hava-yollari-logo.png",
+        imgAlt:         "Türk Hava Yolları Logo",
+        cardPrice:      "269,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "07:05",
+        arrival:        "08:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card3: {
+        imgSrc:         "./assets/img/anadolu-jet-logo.png",
+        imgAlt:         "Anadolu Jet Logo",
+        cardPrice:      "329,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "08:05",
+        arrival:        "09:25",
+        hour:           "1s, 20dk",
+        transferStatus: "1 Aktarmalı",
+        transferCls:    "card__meta card__meta--warning"
+        },
+        
+    card4: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "159,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "10:05",
+        arrival:        "11:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card5: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "289,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "12:05",
+        arrival:        "13:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card6: {
+        imgSrc:         "./assets/img/turk-hava-yollari-logo.png",
+        imgAlt:         "Türk Hava Yolları Logo",
+        cardPrice:      "129,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "13:05",
+        arrival:        "14:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+} 
+%}
+
+{% set cardsArrival = {
+    card1: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "149,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "07:05",
+        arrival:        "08:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card2: {
+        imgSrc:         "./assets/img/turk-hava-yollari-logo.png",
+        imgAlt:         "Türk Hava Yolları Logo",
+        cardPrice:      "269,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "07:05",
+        arrival:        "08:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card3: {
+        imgSrc:         "./assets/img/anadolu-jet-logo.png",
+        imgAlt:         "Anadolu Jet Logo",
+        cardPrice:      "329,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "08:05",
+        arrival:        "09:25",
+        hour:           "1s, 20dk",
+        transferStatus: "1 Aktarmalı",
+        transferCls:    "card__meta card__meta--warning"
+        },
+        
+    card4: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "159,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "10:05",
+        arrival:        "11:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card5: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "289,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "12:05",
+        arrival:        "13:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+        
+    card6: {
+        imgSrc:         "./assets/img/pegasus-logo.png",
+        imgAlt:         "Pegasus Logo",
+        cardPrice:      "389,99 TL",
+        from:           "HTY",
+        to:             "ADB",
+        departure:      "13:05",
+        arrival:        "14:25",
+        hour:           "1s, 20dk",
+        transferStatus: "Aktarmasız",
+        transferCls:    "card__meta"
+        },
+} 
+%}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col">
+                    <h3 class="result-header">
+                        <svg class="icon icon-airplane" width="24" height="24" transform="rotate(90)" transform="translate(295px, 115px)">
+                            <use xlink:href="#icon-airplane"></use>
+                        </svg>
+                        Gidiş uçuşları
+                    </h3>
+                </div>
+            </div>
+            <div class="date-selection">
+                <div class="date-selection__item-left">
+                    <svg class="icon icon-chevron-left">
+                        <use xlink:href="#icon-chevron-left"></use>
+                    </svg>
+                </div>
+                <div class="date-selection__item">
+                    <div class="date-selection__date">26 Eyl, Cts</div>
+                    <div class="date-selection__price">169,99 TL</div>
+                </div>
+                <div class="date-selection__item is-active">
+                    <div class="date-selection__date">27 Eyl, Pzr</div>
+                    <div class="date-selection__price">249,99 TL</div>
+                </div>
+                <div class="date-selection__item">
+                    <div class="date-selection__date">28 Eyl, Sal</div>
+                    <div class="date-selection__price">169,99 TL</div>
+                </div>
+                <div class="date-selection__item-right">
+                    <svg class="icon icon-chevron-right date-selection__item-icon">
+                        <use xlink:href="#icon-chevron-right"></use>
+                    </svg></div>
+            </div>
+
+            {% for cardInfo in cardsDeparture %}
+            <div class="card">
+                <div class="card-top">
+                    <div class="card-top__flex">
+                        <div class="card-top__flex-item">
+                            <img src=" {{ cardInfo.imgSrc }} " alt="{{ cardInfo.imgAlt }}" class="card__image">
+                        </div>
+                        <div class="card-top__flex-item">
+                            <span class="card-top__flex-item-price float-right">{{ cardInfo.cardPrice }}</span>
+                        </div>
+                        <div class="card-top__flex-item">
+                            <a href="#" class="btn btn--yellow float-right result-btn">Biletini Seç</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="card__divider">
+                <div class="card-bottom">
+                    <div class="card-bottom__flex">
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                {{ cardInfo.from }}
+                            </div>
+                            <span class="card__meta card__meta--big">{{ cardInfo.departure }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item card__dest-icon">
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                            <svg class="icon icon-airplane" transform="rotate(90)">
+                                <use xlink:href="#icon-airplane"></use>
+                            </svg>
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                {{ cardInfo.to }}
+                            </div>
+                            <span class="card__meta card__meta--big">{{ cardInfo.arrival }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                Süre
+                            </div>
+                            <span class="card__meta">{{ cardInfo.hour }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                Transfer
+                            </div>
+                            <span class=" {{ cardInfo.transferCls }} ">{{ cardInfo.transferStatus }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <svg class="icon icon-chevron-right float-right">
+                                <use xlink:href="#icon-chevron-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col">
+                    <h3 class="result-header">
+                        <svg class="icon icon-airplane" width="24" height="24" transform="rotate(270)" transform="translate(295px, 115px)">
+                            <use xlink:href="#icon-airplane"></use>
+                        </svg>
+                        Dönüş uçuşları
+                    </h3>
+                </div>
+            </div>
+            <div class="date-selection">
+                <div class="date-selection__item-left">
+                    <svg class="icon icon-chevron-left">
+                        <use xlink:href="#icon-chevron-left"></use>
+                    </svg>
+                </div>
+                <div class="date-selection__item">
+                    <div class="date-selection__date">07 Eki, Pzr</div>
+                    <div class="date-selection__price">149,99 TL</div>
+                </div>
+                <div class="date-selection__item is-active">
+                    <div class="date-selection__date">08 Eki, Pts</div>
+                    <div class="date-selection__price">249,99 TL</div>
+                </div>
+                <div class="date-selection__item">
+                    <div class="date-selection__date">09 Eki, Sal</div>
+                    <div class="date-selection__price">169,99 TL</div>
+                </div>
+                <div class="date-selection__item-right">
+                    <svg class="icon icon-chevron-right date-selection__item-icon">
+                        <use xlink:href="#icon-chevron-right"></use>
+                    </svg></div>
+            </div>
+
+            {% for cardInfo in cardsArrival %}
+            <div class="card">
+                <div class="card-top">
+                    <div class="card-top__flex">
+                        <div class="card-top__flex-item">
+                            <img src=" {{ cardInfo.imgSrc }} " alt="{{ cardInfo.imgAlt }}" class="card__image">
+                        </div>
+                        <div class="card-top__flex-item">
+                            <span class="card-top__flex-item-price float-right">{{ cardInfo.cardPrice }}</span>
+                        </div>
+                        <div class="card-top__flex-item">
+                            <a href="#" class="btn btn--yellow float-right result-btn">Biletini Seç</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="card__divider">
+                <div class="card-bottom">
+                    <div class="card-bottom__flex">
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                {{ cardInfo.from }}
+                            </div>
+                            <span class="card__meta card__meta--big">{{ cardInfo.departure }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item card__dest-icon">
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                            <svg class="icon icon-airplane" transform="rotate(270)">
+                                <use xlink:href="#icon-airplane"></use>
+                            </svg>
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                            <svg class="icon icon-dot">
+                                <use xlink:href="#icon-dot"></use>
+                            </svg>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                {{ cardInfo.to }}
+                            </div>
+                            <span class="card__meta card__meta--big">{{ cardInfo.arrival }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                Süre
+                            </div>
+                            <span class="card__meta">{{ cardInfo.hour }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <div class="card__sub-header">
+                                Transfer
+                            </div>
+                            <span class=" {{ cardInfo.transferCls }} ">{{ cardInfo.transferStatus }}</span>
+                        </div>
+                        <div class="card-bottom__flex-item">
+                            <svg class="icon icon-chevron-right float-right">
+                                <use xlink:href="#icon-chevron-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
