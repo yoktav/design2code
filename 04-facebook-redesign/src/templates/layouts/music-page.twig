@@ -2,19 +2,19 @@
 <html lang="tr">
 
 <head>
-    {% include "../includes/semantics/head.twig" %}
+    {% include "./semantics/head.twig" %}
 </head>
 
 <body>
-    {% include "../includes/main/menu.twig" %}
-    {% include "../includes/music/music-navbar.twig" %}
-    {% include "../includes/music/music-featured.twig" %}
-    {% include "../includes/music/music-spotlight.twig" %}
-    {% include "../includes/music/music-week-chart.twig" %}
-    {% include "../includes/music/music-suggested-artist.twig" %}
-    {% include "../includes/music/music-sidebar.twig" %}
-    {% include "../includes/main/bottom-menu.twig" %}
-    {% include "../includes/main/popup.twig" %}
+    {% include "../general-components/menus/main-menu.twig" %}
+    {% include "../general-components/navbars/navbar.twig" %}
+    {% include "../specific-components/music/music-featured.twig" %}
+    {% include "../specific-components/music/music-spotlight.twig" %}
+    {% include "../specific-components/music/music-week-chart.twig" %}
+    {% include "../specific-components/music/music-suggested-artist.twig" %}
+    {% include "../specific-components/music/music-sidebar.twig" %}
+    {% include "../general-components/menus/bottom-fixed-menu.twig" %}
+    {% include "../general-components/popups/popup.twig" %}
 </body>
 
 </html>

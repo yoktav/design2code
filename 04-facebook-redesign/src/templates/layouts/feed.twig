@@ -2,17 +2,17 @@
 <html lang="tr">
 
 <head>
-    {% include "../includes/semantics/head.twig" %}
+    {% include "./semantics/head.twig" %}
 </head>
 
 <body>
-    {% include "../includes/main/menu.twig" %}
-    {% include "../includes/feed/feed-navbar.twig" %}
-    {% include "../includes/post/post-share.twig" %}
-    {% include "../includes/post/post.twig" %}
-    {% include "../includes/feed/feed-sidebar.twig" %}
-    {% include "../includes/main/bottom-menu.twig" %}
-    {% include "../includes/main/popup.twig" %}
+    {% include "../general-components/menus/main-menu.twig" %}
+    {% include "../general-components/navbars/navbar.twig" %}
+    {% include "../general-components/post/share-post.twig" %}
+    {% include "../general-components/post/post.twig" %}
+    {% include "../specific-components/feed/feed-right-sidebar.twig" %}
+    {% include "../general-components/menus/bottom-fixed-menu.twig" %}
+    {% include "../general-components/popups/popup.twig" %}
 </body>
 
 </html>
