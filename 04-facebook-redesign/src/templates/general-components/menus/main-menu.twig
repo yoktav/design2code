@@ -1,2 +1,98 @@
-{% include "../popups/music-popup.twig" %}
-{% include "../popups/notify-popup.twig" %}
+{% set main-menu-shortcuts = {
+    listItem1: {
+        name:     "Google",
+        logo:     "<svg class="l-icon c-google-g-logo"><use xlink:href="#c-google-g-logo"></use></svg>"
+        },
+        
+    listItem1: {
+        name:     "Y Combinator",
+        logo:     "<svg class="l-icon c-y_combinator_logo"><use xlink:href="#c-y_combinator_logo"></use></svg>"
+        },
+        
+    listItem1: {
+        name:     "Amazon",
+        logo:     "<svg class="l-icon c-amazon-smile-logo"><use xlink:href="#c-amazon-smile-logo"></use></svg>"
+        },
+        
+} 
+%}
+{% set main-menu-menu = {
+    listItem1: {       
+        name:     "News",
+        link:     "",
+        logo:     "<svg class="l-icon c-newspaper-icon"><use xlink:href="#c-newspaper-icon"></use></svg>",
+        more-opt: "<svg class="l-icon c-more-icon u-float-right"><use xlink:href="#c-more-icon"></use></svg>"
+        },
+        
+    listItem2: {       
+        name:     "Messages",
+        link:     "",
+        logo:     "<svg class="l-icon c-message-icon"><use xlink:href="#c-message-icon"></use></svg>",
+        more-opt: "<span class="c-badge">8</span>"
+        }, 
+        
+        
+    listItem3: {       
+        name:     "Friends",
+        link:     "",
+        logo:     "<svg class="l-icon c-user-icon"><use xlink:href="#c-user-icon"></use></svg>",
+        more-opt: ""
+        }, 
+        
+        
+    listItem4: {       
+        name:     "Communities",
+        link:     "",
+        logo:     "<svg class="l-icon c-communities-icon"><use xlink:href="#c-communities-icon"></use></svg>",
+        more-opt: ""
+        }, 
+        
+        
+    listItem5: {       
+        name:     "Events",
+        link:     "",
+        logo:     "<svg class="l-icon c-event-icon"><use xlink:href="#c-event-icon"></use></svg>",
+        more-opt: ""
+        },   
+        
+    listItem6: {       
+        name:     "Pages",
+        link:     "",
+        logo:     "<svg class="l-icon c-pages-icon"><use xlink:href="#c-pages-icon"></use></svg>",
+        more-opt: ""
+        },  
+        
+    listItem7: {       
+        name:     "Manage apps",
+        link:     "",
+        logo:     "<svg class="l-icon c-box-icon"><use xlink:href="#c-box-icon"></use></svg>",
+        more-opt: ""
+        }, 
+} 
+%}
+
+<div class="c-main-menu">
+    <div class="c-main-menu__logo">
+        <svg class="icon c-facebook-logo">
+            <use xlink:href="#c-facebook-logo"></use>
+        </svg>
+    </div>
+    <ol class="c-main-menu__list">
+        <li class="c-main-menu__list-header"><h3>Menu</h3></li>
+        {% for item in main-menu-menu %}
+        <li class="c-main-menu__list-item">
+            <a href="{{item.link}}" class="u-block">
+                {{ item.logo }}
+                {{ item.name }}
+            </a>
+            {{ item.more-opt }}
+        </li>
+        {% endfor %}
+    </ol>
+    <ol class="c-main-menu__list">
+        <li class="c-main-menu__list-header"><h3>Shortcuts</h3></li>
+        {% for item in main-menu-shortcuts %}
+        <li class="c-main-menu__list-item"><a href="{{item.link}}">{{ item.logo }}{{ item.name }}</a></li>
+        {% endfor %}
+    </ol>
+</div><!-- /.c-main-menu -->
