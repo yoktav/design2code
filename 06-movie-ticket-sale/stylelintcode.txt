@@ -1,0 +1,1 @@
+stylelint "src/sass/*.sass" --syntax sass
