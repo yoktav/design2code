@@ -4,11 +4,12 @@
     "theme-color":"#",
     "navbarItems":
     "
-    <a class="c-navbar__link is-active">Posts/a>
-    <a class="c-navbar__link">Photos</a>
-    <a class="c-navbar__link">Video</a>
-    <a class="c-navbar__link">Communities</a>
-    <a class="c-navbar__link">Favourites</a>
-    <a class="c-navbar__link">Recommendations</a>
-    "
+    <a href="" class="c-navbar__link is-active">Posts</a>
+    <a href="" class="c-navbar__link">Photos</a>
+    <a href="" class="c-navbar__link">Video</a>
+    <a href="" class="c-navbar__link">Communities</a>
+    <a href="" class="c-navbar__link">Favourites</a>
+    <a href="" class="c-navbar__link">Recommendations</a>
+    ",
+    "share-post-profile-pic-url": "./assets/img/profile-pic/user1.png"
 }

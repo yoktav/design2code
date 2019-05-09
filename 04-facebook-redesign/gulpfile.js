@@ -15,9 +15,7 @@ var gulp = require('gulp'),
 
 //Paths of CSS Files to concat them   
 var cssSRC = [
-    './src/css/bootstrap-grid.min.css',
-    './src/css/normalize.css',
-    './src/sass/style.css'
+    './src/sass/main.css'
 ];
 
 //Sources and Destinations of Assets
@@ -40,6 +38,10 @@ var paths = {
     imgLogos: {
         src: "./src/img/logos/*",
         dest: "./dist/assets/img/logos/"
+    },
+    imgProfilePic: {
+        src: "./src/img/profile-pic/*",
+        dest: "./dist/assets/img/profile-pic/"
     },
     twigFiles: {
         src: "./src/templates/*.twig",
@@ -102,6 +104,15 @@ function imgmin() {
             imagemin.optipng({optimizationLevel: 5}),
         ]))
         .pipe(gulp.dest(paths.imgFavicon.dest)),
+        
+    gulp.src(paths.imgProfilePic.src)
+    .pipe(changed(paths.imgProfilePic.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgProfilePic.dest)),
     
     gulp.src(paths.imgLogos.src)
     .pipe(changed(paths.imgLogos.dest))

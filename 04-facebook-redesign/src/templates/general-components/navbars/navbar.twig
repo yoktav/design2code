@@ -1,5 +1,44 @@
 <nav>
     <div class="c-navbar">
+       {% for item in ../ %}
+        <a href="" class="c-navbar__link">Photos</a>
+        {% endfor %}
+    </div>
+</nav>
+
+
+{% set main-menu-shortcuts = {
+    listItem1: {
+        name:     "Google",
+        logo:     "<svg class="l-icon c-google-g-logo"><use xlink:href="#c-google-g-logo"></use></svg>"
+        },
+        
+} 
+%}
+
+        {% for item in main-menu-menu %}
+        <li class="c-main-menu__list-item">
+            <a href="{{item.link}}" class="u-block">
+                {{ item.logo }}
+                {{ item.name }}
+            </a>
+            {{ item.more-opt }}
+        </li>
+        {% endfor %}
+        
+       
+      
+    <a href="" class="c-navbar__link is-active">Posts</a>
+    <a href="" class="c-navbar__link">Photos</a>
+    <a href="" class="c-navbar__link">Video</a>
+    <a href="" class="c-navbar__link">Communities</a>
+    <a href="" class="c-navbar__link">Favourites</a>
+    <a href="" class="c-navbar__link">Recommendations</a>
+    
+   
+  
+ <nav>
+    <div class="c-navbar">
         {{ navbarItems }}
     </div>
 </nav>
