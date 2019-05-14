@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col">
+        <div class="c-post">
+            <div class="row">
+                <img class="c-profile-pic c-profile-pic--circle c-profile-pic--2x" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="{{ user-name }}'s profile picture">
+                <a href="" class="c-link u-font-bold">{{ user-name }}</a>
+                <svg class="icon c-verified-icon {{ is-verified}}">
+                    <use xlink:href="#c-verified-icon"></use>
+                </svg>
+                <a href="" class="c-link u-color-greyish-brown u-opacity-44">{{ post-date }}</a>
+                <svg class="icon c-more-icon">
+                    <use xlink:href="#c-more-icon"></use>
+                </svg>
+            </div><!-- /post-info -->
+            <div class="row">
+                <p>{{ post-text }}</p>
+            </div><!-- /post-text -->
+            <div class="row">
+                <img class="c-post__img" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/{{ postImg-name1}}" alt="{{ user-name }}'s post picture">
+                <img class="c-post__img" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/{{ postImg-name2}}" alt="{{ user-name }}'s post picture">
+                <img class="c-post__img" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/{{ postImg-name3}}" alt="{{ user-name }}'s post picture">
+            </div><!-- /post__img -->
+            <div class="row">
+                <svg class="icon c-like-icon">
+                    <use xlink:href="#c-like-icon"></use>
+                </svg>
+                <span class="u-color-cloudy-blue">{{ post-like-number }}</span>
+                <svg class="icon c-comment-icon">
+                    <use xlink:href="#c-comment-icon"></use>
+                </svg>
+                <span class="u-color-cloudy-blue">{{ post-comment-number }}</span>
+                <svg class="icon c-share-icon">
+                    <use xlink:href="#c-share-icon"></use>
+                </svg>
+                <span class="u-color-cloudy-blue">{{ post-share-number }}</span>
+                <svg class="icon c-star-icon">
+                    <use xlink:href="#c-star-icon"></use>
+                </svg>
+            </div><!-- /post-meta -->
+        </div>
+    </div>
+</div><!-- /post-->
