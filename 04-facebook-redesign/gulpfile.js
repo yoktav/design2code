@@ -67,6 +67,10 @@ var paths = {
             dest: "./dist/assets/img/user-pics/sergey-brin/",
         },
     },
+    imgOther: {
+        src: "./src/img/other/*",
+        dest: "./dist/assets/img/other/",
+    },
     twigFiles: {
         src: "./src/templates/*.twig",
         dest: "./src/templates/"
@@ -190,7 +194,16 @@ function imgmin() {
             imagemin.jpegtran({progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
         ]))
-        .pipe(gulp.dest(paths.imgUserPics.sergeyBrin.dest));
+        .pipe(gulp.dest(paths.imgUserPics.sergeyBrin.dest)),
+    
+    gulp.src(paths.imgOther.src)
+    .pipe(changed(paths.imgOther.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgOther.dest));
 }
 
 //twig to uncompressed html
