@@ -76,7 +76,7 @@
         <svg class="icon c-facebook-logo">
             <use xlink:href="#c-facebook-logo"></use>
         </svg>
-    </div>
+    </div><!-- /.c-main-menu__logo -->
     <ol class="c-main-menu__list">
         <li class="c-main-menu__list-header"><h3>Menu</h3></li>
         {% for item in main-menu-menu %}
@@ -88,11 +88,11 @@
             {{ item.more-opt }}
         </li>
         {% endfor %}
-    </ol>
+    </ol><!-- /.c-main-menu__list -->
     <ol class="c-main-menu__list">
         <li class="c-main-menu__list-header"><h3>Shortcuts</h3></li>
         {% for item in main-menu-shortcuts %}
         <li class="c-main-menu__list-item"><a href="{{item.link}}">{{ item.logo }}{{ item.name }}</a></li>
         {% endfor %}
-    </ol>
+    </ol><!-- /.c-main-menu__list -->
 </div><!-- /.c-main-menu -->
