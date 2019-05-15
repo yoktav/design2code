@@ -1,2 +1,68 @@
-{% include "../popups/music-popup.twig" %}
-{% include "../popups/notify-popup.twig" %}
+//{% include "../popups/music-popup.twig" %}
+//{% include "../popups/notify-popup.twig" %}
+
+<div class="c-fixed-menu">
+
+    <div class="c-fixed-menu__user">
+        <img class="c-profile-pic c-profile-pic--circle c-profile-pic--2x" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="{{ user-name }}'s profile picture">
+        <a href="" class="c-link u-font-bold">{{ user-name }}</a>
+        <small class="u-color-greyish-brown u-opacity-44">It's you</small>
+    </div><!-- /.c-fixed-menu__user -->
+
+    <div class="c-fixed-menu__notify">
+        <div class="c-fixed-menu__notify-item">
+            <svg class="icon c-notification-icon">
+                <use xlink:href="#c-notification-icon"></use>
+            </svg>
+            <span class="c-badge">4</span>
+        </div>
+        <div class="c-fixed-menu__notify-item">
+            <svg class="icon c-playlist-icon">
+                <use xlink:href="#c-playlist-icon"></use>
+            </svg>
+        </div>
+        <div class="c-fixed-menu__notify-item">
+            <svg class="icon c-settings-icon">
+                <use xlink:href="#c-settings-icon"></use>
+            </svg>
+        </div>
+        <div class="c-fixed-menu__notify-item">
+            <svg class="icon c-search-icon">
+                <use xlink:href="#c-search-icon"></use>
+            </svg>
+        </div>
+        <div class="c-fixed-menu__notify-item">
+            <svg class="icon c-message-icon">
+                <use xlink:href="#c-message-icon"></use>
+            </svg>
+        </div>
+    </div><!-- /.c-fixed-menu__notify -->
+
+    <div class="c-music-player">
+        <div class="c-music-player-item">
+            <svg class="icon c-player-next-icon">
+                <use xlink:href="#c-player-next-icon"></use>
+            </svg>
+            <svg class="icon c-player-pause-icon">
+                <use xlink:href="#c-player-pause-icon"></use>
+            </svg>
+            <svg class="icon c-player-next-icon u-rotate-180">
+                <use xlink:href="#c-player-next-icon"></use>
+            </svg>
+        </div>
+        <div class="c-music-player-item">
+            <div class="u-color-white">Love yourself</div>
+            <small class="u-color-white u-opacity-50">Eminem</small>
+            <small class="u-color-white u-opacity-50 u-float-right">1:10</small>
+            <div class="c-player-bar">
+                <span class="c-player-bar__buffer"></span>
+            </div>
+        </div>
+        <div class="c-music-player-item">
+            <svg class="icon c-player-volume-icon">
+                <use xlink:href="#c-player-volume-icon"></use>
+            </svg>
+        </div>
+    </div><!-- /.c-music-player -->
+
+</div><!-- /.c-fixed-menu -->
