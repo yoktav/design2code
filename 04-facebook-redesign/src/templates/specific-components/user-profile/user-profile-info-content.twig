@@ -1,0 +1,87 @@
+{% set userProfileContent = {
+    card1: {
+        cardImg:        "<svg class="icon c-birthday-icon icon-2x"><use xlink:href="#c-birthday-icon"></use></svg>",
+        cardHeader:     "47 years",
+        cardSubHeader:  "June,28 1971"
+        },
+        
+    card2: {
+        cardImg:        "<svg class="icon c-gps-icon"><use xlink:href="#c-gps-icon"></use></svg>",
+        cardHeader:     "Lives in",
+        cardSubHeader:  "Chalon Rd, Los Angeles, CA"
+        },
+        
+    card3: {
+        cardImg:        "<svg class="icon c-briefcase-icon"><use xlink:href="#c-briefcase-icon"></use></svg>",
+        cardHeader:     "CEO",
+        cardSubHeader:  "SpaceX"
+        },
+        
+    card4: {
+        cardImg:        "<svg class="icon c-user-icon-2"><use xlink:href="#c-user-icon-2"></use></svg>",
+        cardHeader:     "Relationships",
+        cardSubHeader:  "Single"
+        },
+        
+    card5: {
+        cardImg:        "<svg class="icon c-instagram-logo"><use xlink:href="#c-instagram-logo"></use></svg>",
+        cardHeader:     "Instagram",
+        cardSubHeader:  "elonmusk"
+        },
+        
+    card6: {
+        cardImg:        "<svg class="icon c-graduate-icon"><use xlink:href="#c-graduate-icon"></use></svg>",
+        cardHeader:     "Bachelor of Science in Physics",
+        cardSubHeader:  "University of Pennsylvania"
+        },
+        
+    card7: {
+        cardImg:        "<img class="c-profile-pic c-profile-pic--circle" src="./assets/img/user-pics/christian-philips/profile-pic.png" alt="Christian Philips's profile picture">",
+        cardHeader:     "Kimbal Musk",
+        cardSubHeader:  "Brother"
+        },
+} 
+%}
+<section class="row">
+
+    <div class="c-user-profile-content">
+
+        <div class="row">
+            <div class="c-user-profile-content__nav">
+                <a href="" class="c-link u-color-dark-sky-blue is-active">Overview</a>
+                <a href="" class="c-link u-color-dark-sky-blue">Work &amp; Education</a>
+                <a href="" class="c-link u-color-dark-sky-blue">Details about Elon</a>
+                <a href="" class="c-link u-color-dark-sky-blue">Life events</a>
+            </div><!-- /.c-user-profile-content__nav -->
+        </div>
+
+        <div class="row">
+            <div class="c-user-profile-content__info u-grid">
+
+                {% for cardInfo in userProfileContent %}
+                <div class="c-card">
+
+                    <div class="c-card__img">{{ cardInfo.cardImg }}</div>
+
+                    <div class="c-card__header">
+                        <h4>{{ cardInfo.cardHeader }}</h4>
+                        <h4 class="u-color-dark-sky-blue">{{ cardInfo.cardSubHeader }}</h4>
+                    </div>
+
+                    <div class="c-card__content">
+                        <img src="./assets/img/card-content.png" alt="">
+                        <p class="u-color-greyish-brown-two">
+                            SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.
+                        </p>
+                        <a href="" class="c-link">Read more</a>
+                    </div>
+
+                </div><!-- /.c-card -->
+                {% endfor %}
+
+            </div>
+        </div><!-- /.c-user-profile-content__info -->
+
+    </div><!-- /.c-user-profile-content -->
+
+</section>

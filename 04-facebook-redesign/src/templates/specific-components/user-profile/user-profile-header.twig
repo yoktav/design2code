@@ -1,1 +1,48 @@
-{% include "../includes/menus/navbar.twig" %}
+<section class="row">
+    <div class="c-user-profile-header u-border-bottom">
+
+        <div class="c-user-profile-header__element">
+            <img class="c-profile-pic c-profile-pic--circle c-profile-pic--5x" src="./assets/img/user-pics/{{ post-user-name-for-imgUrl }}/profile-pic.png" alt="{{ user-name }}'s profile picture">
+        </div><!-- /.c-user-profile-header__element -->
+
+        <div class="c-user-profile-header__element">
+            <h1 class="u-font-bold">
+                Elon Musk
+                <svg class="icon c-verified-icon">
+                    <use xlink:href="#c-verified-icon"></use>
+                </svg>
+            </h1>
+
+            <p class="u-color-greyish-brown u-opacity-06">
+                Btw, SpaceX is no longer planning to upgrade Falcon 9 second stage for reusability. Accelerating BFR instead. New design is very exciting! Delightfully counter-intuitive.
+            </p>
+
+            <nav>
+                <div class="c-navbar">
+                    <a href="" class="c-navbar__link">{{ navbarItem1 }}</a>
+                    <a href="" class="c-navbar__link is-active">{{ navbarItem2 }}</a>
+                    <a href="" class="c-navbar__link">{{ navbarItem3 }}</a>
+                    <a href="" class="c-navbar__link">{{ navbarItem4 }}</a>
+                    <a href="" class="c-navbar__link">{{ navbarItem5 }}</a>
+                    <a href="" class="c-navbar__link">{{ navbarItem6 }}</a>
+                </div>
+            </nav>
+
+        </div><!-- /.c-user-profile-header__element -->
+
+        <div class="c-user-profile-header__element">
+
+            <span class="u-border-radius-circle btn btn-dark-sky-blue">
+                <svg class="icon c-message-icon">
+                    <use xlink:href="#c-message-icon"></use>
+                </svg>
+            </span>
+
+            <svg class="icon c-more-icon u-rotate-90 u-color-dark-sky-blue">
+                <use xlink:href="#c-more-icon"></use>
+            </svg>
+
+        </div><!-- /.c-user-profile-header__element -->
+
+    </div><!-- /.c-user-profile-header -->
+</section>
