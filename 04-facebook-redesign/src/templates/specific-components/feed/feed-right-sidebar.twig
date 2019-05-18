@@ -1,47 +1,45 @@
-<div class="row">
-    <div class="c-stories">
-        <div class="c-stories__head">
+<div class="c-feed-right-sidebar">
+    <div class="row">
+        <div class="c-feed-right-sidebar__element">
             <h3 class="u-font-bold">Stories</h3>
-        </div><!-- /.c-stories__head -->
-        <div class="c-stories__content">
-            <span class="c-stories__add c-profile-pic--circle u-border u-border-dark-sky-blue">+</span>
-            <img class="c-profile-pic c-profile-pic--circle u-border u-border-dark-sky-blue" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="">
-            <img class="c-profile-pic c-profile-pic--circle u-border u-border-dark-sky-blue" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="">
-            <img class="c-profile-pic c-profile-pic--circle u-border u-border-dark-sky-blue" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="">
-        </div><!-- /.c-stories__content -->
-    </div>
-</div><!-- /.c-stories -->
+            <span class="u-border-radius-circle btn btn-dark-sky-blue u-border u-border-dark-sky-blue">
+                <svg class="icon c-plus-icon">
+                    <use xlink:href="#c-plus-icon"></use>
+                </svg>
+            </span>
+            <img class="c-profile-pic u-border-radius-circle u-border u-border-dark-sky-blue" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="">
+            <img class="c-profile-pic u-border-radius-circle u-border u-border-dark-sky-blue" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="">
+            <img class="c-profile-pic u-border-radius-circle u-border u-border-dark-sky-blue" src="./assets/img/user-pics/{{ user-name-for-imgUrl }}/profile-pic.png" alt="">
+        </div>
+    </div><!-- /.c-feed-right-sidebar__element -->
 
-<div class="row">
-    <div class="c-sidebar-events">
-        <div class="c-sidebar-events__head">
+    <div class="row">
+        <div class="c-feed-right-sidebar__element">
             <h3 class="u-font-bold">Upcoming events</h3>
             <a href="" class="c-link u-color-dark-sky-blue u-float-right">All</a>
-        </div><!-- /.c-sidebar-events__head -->
-        <div class="c-sidebar-events__content">
             <img src="./assets/img/other/event-sidebar.png" alt="Event">
             <a href="" class="c-link u-font-bold">Google open meetup- Pixel</a>
             <small class="u-color-greyish-brown u-opacity-44">3:10 PM, Today</small>
-        </div><!-- /.c-sidebar-events__content -->
-    </div>
-</div><!-- /.c-sidebar-events -->
+        </div>
+    </div><!-- /.c-feed-right-sidebar__element -->
 
-<div class="row">
-    <div class="c-friend-requests">
-        <div class="c-friend-requests__head">
+    <div class="row">
+        <div class="c-feed-right-sidebar__element">
             <h3 class="u-font-bold">Friend requests</h3>
             <a href="" class="c-link u-color-dark-sky-blue u-float-right">All</a>
-        </div><!-- /.c-friend-requests__head -->
-        <div class="c-friend-requests__content">
             <ol>
                 <ul class="u-flex">
                     <img class="c-profile-pic c-profile-pic--circle" src="./assets/img/user-pics/christian-philips/profile-pic.png" alt="Christian Philips's profile picture">
                     <a href="" class="c-link u-font-bold">Christian Philips</a>
                     <small class="c-link u-color-greyish-brown u-opacity-44">{{ post-date }}</small>
-                    <svg class="icon c-message-icon"><use xlink:href="#c-message-icon"></use></svg>
-                    <svg class="icon c-more-icon u-rotate-90"><use xlink:href="#c-more-icon"></use></svg>
+                    <svg class="icon c-message-icon">
+                        <use xlink:href="#c-message-icon"></use>
+                    </svg>
+                    <svg class="icon c-more-icon u-rotate-90">
+                        <use xlink:href="#c-more-icon"></use>
+                    </svg>
                 </ul>
             </ol>
-        </div><!-- /.c-friend-requests__content -->
-    </div><!-- /.c-friend-requests -->
-</div>
+        </div><!-- /.c-feed-right-sidebar__element -->
+    </div>
+</div><!-- /.c-feed-right-sidebar -->
