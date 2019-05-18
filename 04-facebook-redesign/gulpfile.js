@@ -73,7 +73,7 @@ var paths = {
     },
     twigFiles: {
         src: "./src/templates/*.twig",
-        dest: "./src/templates/"
+        dest: "./src/html/"
     },
     twigData: {
         src: "./src/data/",
