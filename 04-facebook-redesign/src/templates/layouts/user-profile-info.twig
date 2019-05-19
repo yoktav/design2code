@@ -7,16 +7,18 @@
 
 <body>
     <div class="u-hidden">{% include "../general-components/svgs.twig" %}</div><!-- /.u-hidden -->
-    <div class="col-md-3">
-        {% include "../general-components/menus/main-menu.twig" %}
-    </div><!-- /.col-md-3 -->
-    <div class="col-md-9">
-        <div class="c-user-profile">
-            {% include "../specific-components/user-profile/user-profile-header.twig" %}
-            {% include "../specific-components/user-profile/user-profile-info-content.twig" %}
-        </div><!-- /.c-user-profile -->
-    </div><!-- /.col-md-9 -->
-    {% include "../general-components/menus/bottom-menu.twig" %}
+    <div class="row">
+        <div class="col-md-3">
+            {% include "../general-components/menus/main-menu.twig" %}
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-9">
+            <div class="c-user-profile">
+                {% include "../specific-components/user-profile/user-profile-header.twig" %}
+                {% include "../specific-components/user-profile/user-profile-info-content.twig" %}
+            </div><!-- /.c-user-profile -->
+        </div><!-- /.col-md-9 -->
+    </div>
+    {% include "../general-components/menus/bottom-fixed-menu.twig" %}
     {% include "../general-components/popups/popup.twig" %}
 </body>
 
