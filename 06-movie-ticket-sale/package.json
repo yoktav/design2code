@@ -1,7 +1,7 @@
 {
-  "name": "Movie Ticket Sale",
+  "name": "facebookRedesign",
   "version": "1.0.0",
-  "description": "Movie Ticket Sale",
+  "description": "Facebook Redesign",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
