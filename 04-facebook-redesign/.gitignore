@@ -1,4 +1,3 @@
 node_modules/*
 dist/*
 code.txt
-package-lock.json

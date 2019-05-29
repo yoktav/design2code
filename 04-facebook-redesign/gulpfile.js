@@ -15,9 +15,7 @@ var gulp = require('gulp'),
 
 //Paths of CSS Files to concat them   
 var cssSRC = [
-    './src/css/bootstrap-grid.min.css',
-    './src/css/normalize.css',
-    './src/sass/style.css'
+    './src/sass/main.css'
 ];
 
 //Sources and Destinations of Assets
@@ -41,9 +39,41 @@ var paths = {
         src: "./src/img/logos/*",
         dest: "./dist/assets/img/logos/"
     },
+    imgProfilePics: {
+        src: "./src/img/profile-pic/*",
+        dest: "./dist/assets/img/profile-pic/"
+    },
+    imgUserPics: {
+        src: "./src/img/user-pics/*",
+        dest: "./dist/assets/img/user-pics/",
+        elonMusk: {
+            src: "./src/img/user-pics/elon-musk/*",
+            dest: "./dist/assets/img/user-pics/elon-musk/",
+        },
+        kimbalMusk: {
+            src: "./src/img/user-pics/kimbal-musk/*",
+            dest: "./dist/assets/img/user-pics/kimbal-musk/",
+        },
+        christianPhilips: {
+            src: "./src/img/user-pics/christian-philips/*",
+            dest: "./dist/assets/img/user-pics/christian-philips/",
+        },
+        jasonDutch: {
+            src: "./src/img/user-pics/jason-dutch/*",
+            dest: "./dist/assets/img/user-pics/jason-dutch/",
+        },
+        sergeyBrin: {
+            src: "./src/img/user-pics/sergey-brin/*",
+            dest: "./dist/assets/img/user-pics/sergey-brin/",
+        },
+    },
+    imgOther: {
+        src: "./src/img/other/*",
+        dest: "./dist/assets/img/other/",
+    },
     twigFiles: {
         src: "./src/templates/*.twig",
-        dest: "./src/templates/"
+        dest: "./src/html/"
     },
     twigData: {
         src: "./src/data/",
@@ -102,6 +132,15 @@ function imgmin() {
             imagemin.optipng({optimizationLevel: 5}),
         ]))
         .pipe(gulp.dest(paths.imgFavicon.dest)),
+        
+    gulp.src(paths.imgProfilePics.src)
+    .pipe(changed(paths.imgProfilePics.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgProfilePics.dest)),
     
     gulp.src(paths.imgLogos.src)
     .pipe(changed(paths.imgLogos.dest))
@@ -110,7 +149,61 @@ function imgmin() {
             imagemin.jpegtran({progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
         ]))
-        .pipe(gulp.dest(paths.imgLogos.dest));
+        .pipe(gulp.dest(paths.imgLogos.dest)),
+    
+    gulp.src(paths.imgUserPics.elonMusk.src)
+    .pipe(changed(paths.imgUserPics.elonMusk.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgUserPics.elonMusk.dest)),
+    
+    gulp.src(paths.imgUserPics.kimbalMusk.src)
+    .pipe(changed(paths.imgUserPics.kimbalMusk.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgUserPics.kimbalMusk.dest)),
+    
+    gulp.src(paths.imgUserPics.christianPhilips.src)
+    .pipe(changed(paths.imgUserPics.christianPhilips.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgUserPics.christianPhilips.dest)),
+    
+    gulp.src(paths.imgUserPics.jasonDutch.src)
+    .pipe(changed(paths.imgUserPics.jasonDutch.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgUserPics.jasonDutch.dest)),
+    
+    gulp.src(paths.imgUserPics.sergeyBrin.src)
+    .pipe(changed(paths.imgUserPics.sergeyBrin.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgUserPics.sergeyBrin.dest)),
+    
+    gulp.src(paths.imgOther.src)
+    .pipe(changed(paths.imgOther.dest))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+        ]))
+        .pipe(gulp.dest(paths.imgOther.dest));
 }
 
 //twig to uncompressed html

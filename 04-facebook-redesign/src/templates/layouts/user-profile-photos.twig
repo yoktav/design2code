@@ -2,14 +2,14 @@
 <html lang="tr">
 
 <head>
-    {% include "../includes/semantics/head.twig" %}
+    {% include "./semantics/head.twig" %}
 </head>
 
 <body>
-    {% include "../includes/main/menu.twig" %}
-    {% include "../includes/user-profile/user-profile-header.twig" %}
-    {% include "../includes/user-profile/user-photos-content.twig" %}
-    {% include "../includes/main/bottom-menu.twig" %}
+    {% include "../general-components/menus/main-menu.twig" %}
+    {% include "../specific-components/user-profile/user-profile-header.twig" %}
+    {% include "../specific-components/user-profile/user-photos-content.twig" %}
+    {% include "../general-components/menus/bottom-menu.twig" %}
 </body>
 
 </html>

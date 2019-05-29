@@ -2,15 +2,24 @@
 <html lang="tr">
 
 <head>
-    {% include "../includes/semantics/head.twig" %}
+    {% include "./semantics/head.twig" %}
 </head>
 
 <body>
-    {% include "../includes/main/menu.twig" %}
-    {% include "../includes/user-profile/user-profile-header.twig" %}
-    {% include "../includes/user-profile/user-profile-info-content.twig" %}
-    {% include "../includes/main/bottom-menu.twig" %}
-    {% include "../includes/main/popup.twig" %}
+    <div class="u-hidden">{% include "../general-components/svgs.twig" %}</div><!-- /.u-hidden -->
+    <div class="row">
+        <div class="col-md-3">
+            {% include "../general-components/menus/main-menu.twig" %}
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-9">
+            <div class="c-user-profile">
+                {% include "../specific-components/user-profile/user-profile-header.twig" %}
+                {% include "../specific-components/user-profile/user-profile-info-content.twig" %}
+            </div><!-- /.c-user-profile -->
+        </div><!-- /.col-md-9 -->
+    </div>
+    {% include "../general-components/menus/bottom-fixed-menu.twig" %}
+    {% include "../general-components/popups/popup.twig" %}
 </body>
 
 </html>

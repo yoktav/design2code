@@ -2,17 +2,30 @@
 <html lang="tr">
 
 <head>
-    {% include "../includes/semantics/head.twig" %}
+    {% include "./semantics/head.twig" %}
 </head>
 
 <body>
-    {% include "../includes/main/menu.twig" %}
-    {% include "../includes/feed/feed-navbar.twig" %}
-    {% include "../includes/post/post-share.twig" %}
-    {% include "../includes/post/post.twig" %}
-    {% include "../includes/feed/feed-sidebar.twig" %}
-    {% include "../includes/main/bottom-menu.twig" %}
-    {% include "../includes/main/popup.twig" %}
+    <div class="u-hidden">{% include "../general-components/svgs.twig" %}</div><!-- /.u-hidden -->
+    <div class="row">
+        <div class="col-md-3">
+            {% include "../general-components/menus/main-menu.twig" %}
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-9">
+            {% include "../general-components/navbars/navbar.twig" %}
+            <div class="row">
+                <div class="col-md-3">
+                    {% include "../general-components/post/share-post.twig" %}
+                    {% include "../general-components/post/post.twig" %}
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-9">
+                    {% include "../specific-components/feed/feed-right-sidebar.twig" %}
+                </div><!-- /.col-md-9 -->
+            </div><!-- /.row -->
+        </div><!-- /.col-md-9 -->
+    </div>
+    {% include "../general-components/menus/bottom-fixed-menu.twig" %}
+    {% include "../general-components/popups/popup.twig" %}
 </body>
 
 </html>
