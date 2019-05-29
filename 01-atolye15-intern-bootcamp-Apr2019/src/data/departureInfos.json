@@ -1,0 +1,76 @@
+{
+    "cardsDeparture": {
+        "card1": {
+            "imgSrc":         "./assets/img/pegasus-logo.png",
+            "imgAlt":         "Pegasus Logo",
+            "cardPrice":      "149,99 TL",
+            "from":           "HTY",
+            "to":             "ADB",
+            "departure":      "07:05",
+            "arrival":        "08:25",
+            "hour":           "1s, 20dk",
+            "transferStatus": "Aktarmasız",
+            "transferCls":    "card__meta"
+        },        
+        "card2": {
+            "imgSrc":         "./assets/img/turk-hava-yollari-logo.png",
+            "imgAlt":         "Türk Hava Yolları Logo",
+            "cardPrice":      "269,99 TL",
+            "from":           "HTY",
+            "to":             "ADB",
+            "departure":      "07:05",
+            "arrival":        "08:25",
+            "hour":           "1s, 20dk",
+            "transferStatus": "Aktarmasız",
+            "transferCls":    "card__meta"
+        },
+        "card3": {
+            "imgSrc":         "./assets/img/anadolu-jet-logo.png",
+            "imgAlt":         "Anadolu Jet Logo",
+            "cardPrice":      "329,99 TL",
+            "from":           "HTY",
+            "to":             "ADB",
+            "departure":      "08:05",
+            "arrival":        "09:25",
+            "hour":           "1s, 20dk",
+            "transferStatus": "1 Aktarmalı",
+            "transferCls":    "card__meta card__meta--warning"
+        },
+        "card4": {
+            "imgSrc":         "./assets/img/pegasus-logo.png",
+            "imgAlt":         "Pegasus Logo",
+            "cardPrice":      "159,99 TL",
+            "from":           "HTY",
+            "to":             "ADB",
+            "departure":      "10:05",
+            "arrival":        "11:25",
+            "hour":           "1s, 20dk",
+            "transferStatus": "Aktarmasız",
+            "transferCls":    "card__meta"
+        },
+        "card5": {
+            "imgSrc":         "./assets/img/pegasus-logo.png",
+            "imgAlt":         "Pegasus Logo",
+            "cardPrice":      "289,99 TL",
+            "from":           "HTY",
+            "to":             "ADB",
+            "departure":      "12:05",
+            "arrival":        "13:25",
+            "hour":           "1s, 20dk",
+            "transferStatus": "Aktarmasız",
+            "transferCls":    "card__meta"
+        },
+        "card6": {
+            "imgSrc":         "./assets/img/turk-hava-yollari-logo.png",
+            "imgAlt":         "Türk Hava Yolları Logo",
+            "cardPrice":      "129,99 TL",
+            "from":           "HTY",
+            "to":             "ADB",
+            "departure":      "13:05",
+            "arrival":        "14:25",
+            "hour":           "1s, 20dk",
+            "transferStatus": "Aktarmasız",
+            "transferCls":    "card__meta"
+        }
+    } 
+}

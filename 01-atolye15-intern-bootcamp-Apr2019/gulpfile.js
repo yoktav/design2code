@@ -59,6 +59,10 @@ function twigHtml() {
     return (gulp.src(paths.twigFiles.src)
     .pipe(data(function (file) {
     return JSON.parse(fs.readFileSync(paths.twigData.src + path.basename(file.path) + '.json'));}))
+    .pipe(data(function (file) {
+    return JSON.parse(fs.readFileSync(paths.twigData.src + 'departureInfos' + '.json'));}))
+    .pipe(data(function (file) {    
+    return JSON.parse(fs.readFileSync(paths.twigData.src + 'arrivalInfos' + '.json'));}))
     .pipe(twig()).on('error', function (err) {process.stderr.write(err.message + '\n');this.emit('end');})        
     .pipe(gulp.dest(paths.twigFiles.dest))
     );
